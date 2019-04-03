@@ -1,1 +1,55 @@
 /* Acá va tu código */
+body {
+  background-image: url("fondo.jpg");
+  font-family: sans-serif;
+  font-size: 30px;
+  align: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+div.container{
+  width: 600px;
+  }
+
+.center {
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  text-align: center
+}
+
+.containerPreg{
+  height: auto;
+  width: 100%;
+}
+
+button {
+  text-decoration: none;
+   padding: 10px;
+   font-weight: 600;
+   font-size: 20px;
+   color: #ffffff;
+   background-color: #1883ba;
+   border-radius: 6px;
+   border: 2px solid #0016b0;
+}
+
+h1 {
+  font-family: sans-serif;
+  color: black;
+  background-color: inherit;
+  text-align: center;
+}
+
+input {
+  width: inherit;
+  font-size: 25px;
+}
+
+.hidden {
+  display: none;
+}
+p {
+  font-family: sans-serif
+}
