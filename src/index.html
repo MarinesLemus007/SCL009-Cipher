@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+  <center> <img src="Logo.png" border="0" width="300" height="300"> </center>
   </head>
   <body>
-
     <!-- explicación al usuario del cifrado cesar -->
-      <div id= "screenIntro" class="container center">
+    <div id= "screenIntro" class="container center">
         <h1>¿Qué es el Cifrado Cesar?</h1>
         <p> Cifrado Cesar es un cifrado de sustitución, fue uno de los primeros métodos de cifrado
             conocidos históricamente. Julio César lo usó para enviar órdenes a sus generales en los
@@ -20,25 +20,25 @@
           código seguro.
         </p>
         <br>
-        <button type="button" onclick="screenOne()" name="buttonIntro">SIGUIENTE</button>
+        <button id="screenOne" name="buttonIntro">SIGUIENTE</button>
       </div>
       <!-- el usuario ingresa el offset -->
-      <div id= "screenOne" class="container center hidden">
+      <div id= "screenOneA" class="container center hidden">
         <h1>Por favor, ingrese el número de desplazamientos que desea usar</h1>
         <input id="offSet" type="number" min ="1" >
         <br>
         <br>
-        <button type="button" onclick="screenTwo()" name="buttonOne">CONTINUAR</button>
+        <button id="screenTwo" name="buttonOne">CONTINUAR</button>
       </div>
       <!-- el usuario ingresa su mensaje o código y elige cifrar o descifrar -->
-      <div id= "screenTwo" class="container center hidden">
+      <div id= "screenTwoA" class="container center hidden">
         <h1>Ingrese su mensaje o código</h1>
         <input type="text" id="userString" value="" name="intro">
         <br>
         <br>
-        <button onclick= "clean()">LIMPIAR</button>
-        <button type="button" onclick="cipher()" name="buttonTwo">CIFRAR</button>
-        <button type="button" onclick="decipher()" name="buttonThree">DESCIFRAR</button>
+        <button id= "clean">LIMPIAR</button>
+        <button id="cipher" name="buttonTwo">CIFRAR</button>
+        <button id="decipher" name="buttonThree">DESCIFRAR</button>
       </div>
       <!-- el usuario presiona el botón cifrar -->
       <div id= "screenCipher" class="container center hidden">
@@ -46,8 +46,8 @@
         <input name="code" id="userCode" type="text">
         <br>
         <br>
-        <button type="button" onclick="screenOne()" name="buttonFour">INICIO</button>
-        <button type="button" onclick="screenFinal()" name="buttonFive">FINALIZAR</button>
+        <!--<button id="screenOne" name="buttonIntro">INICIO</button>-->
+        <button id="screenFinal" name="buttonFive">FINALIZAR</button>
       </div>
       <!-- el usuario presiona el botón descifrar -->
       <div id= "screenDecipher" class="container center hidden">
@@ -55,17 +55,18 @@
         <input name="code" id="userDecode" type="text">
         <br>
         <br>
-        <button type="button" onclick="screenOne()" name="buttonFour">INICIO</button>
-        <button type="button" onclick="screenFinal()" name="buttonFive">FINALIZAR</button>
+        <!--<button id="screenOne" name="buttonIntro">INICIO</button>-->
+        <button id="screenFinal" name="buttonFive">FINALIZAR</button>
       </div>
       <!-- mensaje de despedida -->
-      <div id= "screenFinal" class="container center hidden">
+      <div id= "screenFinalA" class="container center hidden">
         <h1>Gracias por usar Cifrado Cesar, hasta pronto</h1>
       </div>
 
-    <div id="root">
+  <!-- <div id="root">
       <h1>Hola mundo!</h1>
-    </div>
+    </div>-->
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>

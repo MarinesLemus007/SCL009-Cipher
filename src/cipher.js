@@ -1,11 +1,7 @@
 window.cipher = {
-  encode: () => {
+  encode: (offSet, userString) => {
     /* Acá va tu código */
 
-    const cipher=()=> {
-
-  let userString = document.getElementById("userString").value.toUpperCase();
-  let offSet = document.getElementById("offSet").value;
   let code= ""; // el código final del usuario
   let cesarEncryption; // formula del cifrado cesar
 
@@ -22,22 +18,12 @@ window.cipher = {
         code+= encrypted;
     }
 
-    document.getElementById("screenTwo").style.display = "none";
-    document.getElementById("screenDecipher").style.display = "none";
-    document.getElementById("screenCipher").style.display = "block";
-
-   return document.getElementById("userCode").value =code;
-}
-
+return code
 
   },
-  decode: () => {
+  decode: (offset, userString) => {
     /* Acá va tu código */
 
-    const decipher=()=> {
-
-      let userString = document.getElementById("userString").value.toUpperCase();
-      let offSet = document.getElementById("offSet").value;
       let decode= ""; // el código final del usuario
       let cesarEncryption; // formula del cifrado cesar
 
@@ -54,13 +40,7 @@ window.cipher = {
             decode+= encrypted;
         }
 
-        document.getElementById("screenTwo").style.display = "none";
-        document.getElementById("screenCipher").style.display = "none";
-        document.getElementById("screenDecipher").style.display = "block";
-
-       return document.getElementById("userDecode").value =decode;
-    }
-
+return decode
 
   }
 };
