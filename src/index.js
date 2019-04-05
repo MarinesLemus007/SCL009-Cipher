@@ -8,6 +8,7 @@ document.getElementById("screenOne").addEventListener("click", ()=> {
 
 }
 );
+
 // pasa de la pantalla del offset a la pantalla del mensaje o código
 document.getElementById("screenTwo").addEventListener("click", ()=> {
 
@@ -16,10 +17,11 @@ document.getElementById("screenTwo").addEventListener("click", ()=> {
 
 }
 );
+
 // botón que limpia el campo del mensaje o códijo
 document.getElementById("clean").addEventListener("click", ()=> {
 
-document.getElementById("userString").value=" ";
+document.getElementById("userString").value="";
 
 }
 );
@@ -27,7 +29,7 @@ document.getElementById("userString").value=" ";
 // función para el cifrado
 document.getElementById("cipher").addEventListener("click", ()=> {
 
-  let userString = document.getElementById("userString").value.toUpperCase();
+  let userString = document.getElementById("userString").value;
   let offSet = document.getElementById("offSet").value;
 
   document.getElementById("screenTwoA").style.display = "none";
@@ -41,7 +43,7 @@ document.getElementById("cipher").addEventListener("click", ()=> {
 // función para el decifrado
 document.getElementById("decipher").addEventListener("click", ()=> {
 
-  let userString = document.getElementById("userString").value.toUpperCase();
+  let userString = document.getElementById("userString").value;
   let offSet = document.getElementById("offSet").value;
 
   document.getElementById("screenTwoA").style.display = "none";
@@ -51,19 +53,39 @@ document.getElementById("decipher").addEventListener("click", ()=> {
 document.getElementById("userDecode").value = window.cipher.decode(offSet, userString);
 }
 );
+// ir a la pantalla de offSet
+document.getElementById("start").addEventListener("click", ()=> {
 
-//document.getElementById("start").addEventListener("click", ()=> {
+  document.getElementById("screenDecipher").style.display = "none";
+  document.getElementById("screenCipher").style.display = "none";
+  document.getElementById("screenIntro").style.display = "none";
+  document.getElementById("screenOneA").style.display = "block";
 
-  // document.getElementById("screenDecipher").style.display = "none";
-  //document.getElementById("screenCipher").style.display = "none";
-  //document.getElementById("screenIntro").style.display = "none";
-  //document.getElementById("screenOneA").style.display = "block";
+}
+);
+// ir a la pantalla de offSet
+document.getElementById("startTwo").addEventListener("click", ()=> {
 
-//}
-//);
+  document.getElementById("screenDecipher").style.display = "none";
+  document.getElementById("screenCipher").style.display = "none";
+  document.getElementById("screenIntro").style.display = "none";
+  document.getElementById("screenOneA").style.display = "block";
+
+}
+);
 
 // pantalla de despedida
 document.getElementById("screenFinal").addEventListener("click", ()=> {
+
+  document.getElementById("screenDecipher").style.display = "none";
+  document.getElementById("screenCipher").style.display = "none";
+  document.getElementById("screenFinalA").style.display = "block";
+
+}
+);
+
+// pantalla de despedida
+document.getElementById("screenFinalTwo").addEventListener("click", ()=> {
 
   document.getElementById("screenDecipher").style.display = "none";
   document.getElementById("screenCipher").style.display = "none";
