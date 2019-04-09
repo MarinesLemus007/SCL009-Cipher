@@ -7,13 +7,17 @@ window.cipher = {
 
     for(let i=0; i<userString.length; i++){
 
-      if(userString.charCodeAt(i) >= 65 && userString.charCodeAt(i) <= 90){
-        cesarEncryption = (userString.charCodeAt(i) - 65 + parseInt(offSet)) % 26 + 65;
-        }
-
-        else if(userString.charCodeAt(i) >= 97 && userString.charCodeAt(i) <= 122){
-          cesarEncryption = (userString.charCodeAt(i) - 97 + parseInt(offSet)) % 26 + 97;
+        if(userString.charCodeAt(i) >= 65 && userString.charCodeAt(i) <= 90){
+          cesarEncryption = (userString.charCodeAt(i) - 65 + parseInt(offSet)) % 26 + 65;
           }
+
+          else if(userString.charCodeAt(i) >= 97 && userString.charCodeAt(i) <= 122){
+            cesarEncryption = (userString.charCodeAt(i) - 97 + parseInt(offSet)) % 26 + 97;
+            }
+
+            else if(userString.charCodeAt(i) === 32){
+              cesarEncryption = (userString.charCodeAt(i) - 32 + parseInt(offSet)) % 1 + 32;
+              }
 
         let encrypted= String.fromCharCode(cesarEncryption);
         code+= encrypted;
@@ -37,6 +41,10 @@ return code
             else if(userString.charCodeAt(i) >= 97 && userString.charCodeAt(i) <= 122){
               cesarEncryption = (userString.charCodeAt(i) - 122 - parseInt(offSet)) % 26 + 122;
               }
+
+              else if(userString.charCodeAt(i) === 32){
+                cesarEncryption = (userString.charCodeAt(i) - 32 + parseInt(offSet)) % 1 + 32;
+                }
 
             let encrypted= String.fromCharCode(cesarEncryption);
             decode+= encrypted;
