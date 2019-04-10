@@ -27,12 +27,12 @@ Imagen 4. Pantallas del programa después del feetback dos.
 Con respecto al diseño, decidí finalmente que mostraría una pantalla de inicio explicando el cifrado cesar. Con un botón de siguiente, me llevaría a la pantalla donde se le preguntaría al usuario el número de desplazamiento y por medio de un input que iniciaría desde el uno en adelante él pudiera seleccionarlo. Seguidamente, con un botón de continuar, llevaría a la pantalla donde se le pide al usuario que ingrese el mensaje o código y por medio de tres botones él decidiera: 1. Limpiar el campo, 2. Cifrar o 3. Descifrar. Al presionar cifrar o descifrar, llevaría a la pantalla donde se mostraría el resultado, según elección. En esa pantalla podría tomar la opción de ir a la pantalla de preguntar el offset o ir a la pantalla de despedida para salir del flujo del programa.
 Ahora seguiría el siguiente paso, escribir los “to do” para empezar a crear el código. A continuación, el url para ir a mi Trello: 
 
-![enlace-a-trello] (https://trello.com/b/qyVr5Uxp/programa-c%C3%B3digo-cesar)
+[MiTrello](https://trello.com/b/qyVr5Uxp/programa-c%C3%B3digo-cesar)
 
 El tema que elegí para mi producto digital fue una página educativa sobre seguridad de redes. La seguridad de redes comprende las políticas y prácticas para prevenir y supervisar el acceso no autorizado, el uso indebido, la modificación o denegación de una red informática y sus recursos. En este apartado en particular, se trata de iniciar al usuario sobre la generación de claves para la creación de accesos autorizados y que la persona entienda que los códigos y mensajes cifrados son elementos que se han usado a lo largo de la historia. Por medio del cifrado cesar se puede entender la lógica en la creación de estos usando una interfaz didáctica e interactiva.
 Por último, se diseñó un logo acorde a la temática escogida.
 
-![imagen-cuatro](src/img/Logo.png)
+![imagen-cinco](src/img/Logo.png)
 Imagen 5. Logo del programa acorde a temática escogida.
 
 ## Quiénes son los usuarios
@@ -69,3 +69,50 @@ Gracias por participar. Me gustaría saber si tiene algún comentario final en r
 
 A continuación, el enlace al programa:
 [EduCLave](https://marineslemus007.github.io/SCL009-Cipher/src/index.html)
+
+## Sesiones de testing
+
+Usuario: Caren
+
+Posee correo y tarjetas bancarias
+
+Caren manifiesta haber entendido la lógica del cifrado. Pudo crear mensajes secretos en la plataforma. Se le hizo fácil manipular la interfaz y considera cambiar sus claves cada cierto tiempo.
+
+![imagen-seis](src/img/ima_testing1.jpg)
+Imagen 6. Usuario número uno.
+
+Usuario: Yajaira
+
+Posee correo y tarjeta bancaria
+
+Yajaira manifiesta que le falta practicar un poco más con el programa para entender la lógica del cifrado y descifrado. Pudo crear mensajes secretos en la plataforma. Se le hizo fácil manipular la interfaz y considera cambiar sus claves cada cierto tiempo.
+
+![imagen-siete](src/img/ima_testing2.jpg)
+Imagen 7. Usuario número dos.
+
+Usuario: Edwar
+
+Posee correo y tarjeta bancaria
+
+Edwar manifiesta no entender muy bien la lógica del cifrado y descifrado. Pudo crear mensajes secretos en la plataforma. Se le hizo sencillo manipular la interfaz y también consideraría cambiar sus claves cada cierto tiempo.
+
+![imagen-ocho](src/img/ima_testing3.jpg)
+Imagen 8. Usuario número tres.
+
+Usuario: Hayde
+
+Posee correo y tarjeta bancaria
+
+Hayde pudo entender muy rápido la lógica del cifrado y descifrado. Creo mensajes secretos en la plataforma. Se le hizo sencillo manipular la interfaz y consideraría cambiar sus claves cada cierto tiempo.
+
+![imagen-nueve](src/img/ima_testing4.jpg)
+Imagen 9. Usuario número cuatro.
+
+Usuario: Betányeli
+
+Posee correo y tarjeta bancaria
+
+Betányeli comprendió la lógica del cifrado y descifrado. Pudo crear mensajes secretos en la plataforma. Se le hizo sencillo manipular la interfaz y consideraría tomar medidas de seguridad para protegerse en el mundo digital.
+
+![imagen-diez](src/img/ima_testing5.jpg)
+Imagen 10. Usuario número cinco.
