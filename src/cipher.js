@@ -15,6 +15,10 @@ window.cipher = {
             cesarEncryption = (userString.charCodeAt(i) - 97 + parseInt(offSet)) % 26 + 97;
             }
 
+            else if(userString.charCodeAt(i) >= 48 && userString.charCodeAt(i) <= 57){
+              cesarEncryption = (userString.charCodeAt(i) - 48 + parseInt(offSet)) % 10 + 48;
+              }
+
             else if(userString.charCodeAt(i) === 32){
               cesarEncryption = (userString.charCodeAt(i) - 32 + parseInt(offSet)) % 1 + 32;
               }
@@ -41,6 +45,10 @@ return code
             else if(userString.charCodeAt(i) >= 97 && userString.charCodeAt(i) <= 122){
               cesarEncryption = (userString.charCodeAt(i) - 122 - parseInt(offSet)) % 26 + 122;
               }
+
+              else if(userString.charCodeAt(i) >= 48 && userString.charCodeAt(i) <= 57){
+                cesarEncryption = (userString.charCodeAt(i) - 57 - parseInt(offSet)) % 10 + 57;
+                }
 
               else if(userString.charCodeAt(i) === 32){
                 cesarEncryption = (userString.charCodeAt(i) - 32 + parseInt(offSet)) % 1 + 32;

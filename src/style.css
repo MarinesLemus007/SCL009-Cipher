@@ -3,7 +3,7 @@ body {
   background-image: url("./img/Fondo.jpg");
   font-family: sans-serif;
   font-size: 30px;
-  align: center;
+  text-align: center;
   background-repeat: repeat;
   background-attachment: fixed;
 }
