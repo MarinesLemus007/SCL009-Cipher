@@ -31,12 +31,23 @@ document.getElementById("cipher").addEventListener("click", ()=> {
 
   let userString = document.getElementById("userString").value;
   let offSet = document.getElementById("offSet").value;
-
+  let offSetSign = Math.sign(offSet);
+  
   document.getElementById("screenTwoA").style.display = "none";
   document.getElementById("screenDecipher").style.display = "none";
   document.getElementById("screenCipher").style.display = "block";
 
- document.getElementById("userCode").value = window.cipher.encode(offSet, userString);
+    if(offSetSign === -1){
+    
+    offSet = Math.abs(offSet);
+   
+    document.getElementById("userCode").value = window.cipher.decode(offSet, userString);
+    }
+
+    else if(offSetSign === 1 || offSetSign === 0 ){
+    document.getElementById("userCode").value = window.cipher.encode(offSet, userString);
+    }
+    
 }
 );
 
@@ -45,12 +56,23 @@ document.getElementById("decipher").addEventListener("click", ()=> {
 
   let userString = document.getElementById("userString").value;
   let offSet = document.getElementById("offSet").value;
+  let offSetSign = Math.sign(offSet);
 
   document.getElementById("screenTwoA").style.display = "none";
   document.getElementById("screenCipher").style.display = "none";
   document.getElementById("screenDecipher").style.display = "block";
 
-document.getElementById("userDecode").value = window.cipher.decode(offSet, userString);
+  if(offSetSign === -1){
+    
+    offSet = Math.abs(offSet);
+   
+    document.getElementById("userDecode").value = window.cipher.encode(offSet, userString);
+    }
+
+    else if(offSetSign === 1 || offSetSign === 0 ){
+    document.getElementById("userDecode").value = window.cipher.decode(offSet, userString);
+    }
+
 }
 );
 // ir a la pantalla de offSet
